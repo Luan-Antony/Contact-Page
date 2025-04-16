@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+
+    <title>Beebs - Contact Landing Page</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Beebs.</h1>
+            </div>
+            <nav>
+                <input type="checkbox" id="menu-hamburguer" />
+
+                <label for="menu-hamburguer">
+                    <div class="menu">
+                        <span class="hamburguer"></span>
+                    </div>
+                </label>
+
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Let's Talk</h2>
+                <p>Have some big idea or brand to develop and need help? Then reach out we'd love to hear about your
+                    project and provide help</p>
+                <div class="contact-info">
+                    <h3>Email</h3>
+                    <p>beebs@gmail.com</p>
+                </div>
+                <div class="social-links">
+                    <h3>Sociais</h3>
+                    <ul>
+                        <li><a href="">Instagram</a></li>
+                        <li><a href="">Twitter</a></li>
+                        <li><a href="">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="form-container">
+                <div id="contactForm" class="form">
+                    <label for="name">Nome</label>
+                    <input class="input" id="name" name="name" placeholder="">
+                    <span class="errorMessage desativado">Campo obrigatório</span>
+
+                    <br><br>
+
+                    <label for="email">Email</label>
+                    <input class="input" id="email" name="email" placeholder="">
+                    <span class="errorMessage desativado">Campo obrigatório</span>
+
+                    <br><br>
+
+                    <label for="service">What service are you interested in</label>
+                    <select class="input" id="service">
+                        <option value="">Select project type</option>
+                        <option value="opcao1">Option 1</option>
+                        <option value="opcao2">Option 2</option>
+                    </select>
+                    <span class="errorMessage desativado">Selecione uma opção</span>
+
+                    <br><br>
+
+                    <label for="budget">Budget</label>
+                    <select class="input" id="budget">
+                        <option value="">Select project budget</option>
+                        <option value="orcamento1">Budget 1</option>
+                        <option value="orcamento2">Budget 2</option>
+                    </select>
+                    <span class="errorMessage desativado">Selecione uma opção</span>
+
+                    <br><br>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder=""></textarea>
+
+                    <button id="btn">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="src/js/index.js"></script>
+</body>
+
+</html>
